@@ -127,62 +127,62 @@ public class RegexTest {
 	}
 
 	@Test
-	public void testEmail2Valid_Fail() {
+	public void testEmail2InValid_Fail() {
 		assertFalse(form.userEmail("abc@.com.my"));
 	}
 
 	@Test
-	public void testEmail3Valid_Fail() {
+	public void testEmail3InValid_Fail() {
 		assertFalse(form.userEmail("abc123@gmail.com.a"));
 	}
 
 	@Test
-	public void testEmail4Valid_Fail() {
+	public void testEmail4InValid_Fail() {
 		assertFalse(form.userEmail("abc123@.com.com"));
 	}
 
 	@Test
-	public void testEmail5Valid_Fail() {
+	public void testEmail5InValid_Fail() {
 		assertFalse(form.userEmail(".abc@abc.com"));
 	}
 
 	@Test
-	public void testEmail6Valid_Fail() {
+	public void testEmail6InValid_Fail() {
 		assertFalse(form.userEmail("abc()*@gmail.com"));
 	}
 
 	@Test
-	public void testEmail7Valid_Fail() {
+	public void testEmail7InValid_Fail() {
 		assertFalse(form.userEmail("abc@%*.com"));
 	}
 
 	@Test
-	public void testEmail8Valid_Fail() {
+	public void testEmail8InValid_Fail() {
 		assertFalse(form.userEmail("abc..2002@gmail.com"));
 	}
 
 	@Test
-	public void testEmail9Valid_Fail() {
+	public void testEmail9InValid_Fail() {
 		assertFalse(form.userEmail("abc.@gmail.com"));
 	}
 
 	@Test
-	public void testEmail10Valid_Fail() {
+	public void testEmail10InValid_Fail() {
 		assertFalse(form.userEmail("abc@abc@gmail.com"));
 	}
 
 	@Test
-	public void testEmail11Valid_Fail() {
+	public void testEmail11InValid_Fail() {
 		assertFalse(form.userEmail("abc@gmail.com.1a"));
 	}
 
 	@Test
-	public void testEmail12Valid_Fail() {
+	public void testEmail12InValid_Fail() {
 		assertFalse(form.userEmail("abc@gmail.com.aa.au"));
 	}
 
 	@Test
-	public void testEmailValid_Fail() {
+	public void testEmailInValid_Fail() {
 		assertFalse(form.userEmail("abc"));
 	}
 
